@@ -61,6 +61,7 @@
 }
 
 .content__section__title {
+  font-variation-settings: "wght" var(--title-weight);
   padding: 5px 10px;
   font-size: inherit;
 }
@@ -139,7 +140,8 @@
   transition: border-color 0.3s ease;
 }
 
-.card__icon-button:focus {
+.card__icon-button:focus,
+.button:focus {
   outline: none;
 }
 
@@ -172,10 +174,6 @@
 
 .button:hover::after {
   transform: scaleX(1);
-}
-
-.button:focus {
-  outline: none;
 }
 
 .button:focus-visible {
